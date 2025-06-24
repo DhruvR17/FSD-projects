@@ -1,0 +1,119 @@
+CSS
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body[data-theme="light"] {
+    background: #f5f5f5;
+    color: #333;
+}
+
+body[data-theme="dark"] {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Navbar */
+header {
+    background: #222;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.toggle-theme {
+    background: #ffcc00;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+/* Typewriter Effect */
+#typewriter {
+    overflow: hidden;
+    border-right: 2px solid orange;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.skill-box {
+    background: #eee;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.skill-box img {
+    width: 50px;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
